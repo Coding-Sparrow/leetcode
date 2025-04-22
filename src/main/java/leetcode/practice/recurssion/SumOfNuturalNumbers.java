@@ -1,12 +1,17 @@
-public package leetcode.practice.recurssion;
+package leetcode.practice.recurssion;
 
-class SumOfNuturalNumbers {
+public class SumOfNuturalNumbers {
 
-    public int recursiveSum(int n) {
-        if (n == 0) {   
-            return 0;
+    public static int recursiveSum(int n) {
+        if(n == 0) {
+            return n;
         }
         return n + recursiveSum(n-1);
+    }
+
+    public static void main(String[] args) {
+        int SumOfNuturalNumbers = recursiveSum(10);
+        System.out.println(SumOfNuturalNumbers);
     }
        
 }
