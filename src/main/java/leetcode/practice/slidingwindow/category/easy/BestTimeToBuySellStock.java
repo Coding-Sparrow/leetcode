@@ -31,6 +31,7 @@ public class BestTimeToBuySellStock {
             minimum =Math.min(price, minimum);
             profit = Math.max(profit, price-minimum);
         }
+        
         return profit;
     }
 }
