@@ -15,7 +15,6 @@ public class BinarySearch {
         if(arr[mid] == target) {
             return true;
         }
-
         if(arr[mid] < target) {
             return binarySearch(arr, mid+1, right, target);
         } else {
